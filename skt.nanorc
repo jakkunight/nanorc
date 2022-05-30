@@ -1,0 +1,43 @@
+## Personal highlighting of my scripts for YT videos or pseudocode.
+## Author: @Jakku Night
+##
+## Let's define my highlight:
+
+## Syntax and file extension:
+syntax "Sketch" "\.(skt)$"
+
+## Keywords:
+## Datatypes:
+color blue "\<(int|bool|float|double|string|void|char|byte|word|double|long|bit|enum|const|static)\>"
+## Control Structures:
+color blue "\<(if|else|switch|case|for|do|while|try|catch|async|await|throw|return|break|default|goto)\>"
+## Instructions:
+color blue "\<(print|input|graph|create|destroy|new|delete|write|read|connect|fetch|emit|on|include|require|import|export|as|load)\>"
+## Special objects:
+color blue "\<(FILE|SOCKET|DATABASE|CONNECTION|WINDOW|CONSOLE|KEYBOARD|MOUSE|SCREEN|PRINTER|SPRITE|IMAGE|DOCUMENT|FILESYSTEM|SYSTEM|SHELL|AUDIO|VIDEO)\>"
+## Object Oriented Programing:
+color blue "\<(class|object|struct|private|public|protected|extends|constructor)\>"
+## Others:
+color blue "\<(null|typedef|sizeof|typeof|instanceof)\>"
+## True and False:
+color blue "\<(true|false)\>"
+
+## Numbers:
+color magenta "([0-9])"
+
+## Operators:
+color red "(\+|\-|\*|\/|\%|\&|\||\!|\<|\>|\=|\(|\)|\{|\}|\[|\]|\@|\#|\$|\.|\,|\;|\:|\?|\~)"
+
+## Titles/Tags:
+color cyan start="^\[" end="\]$"
+
+## Strings:
+color yellow start="\"" end="\""
+color yellow start="\'" end="\'"
+
+## Comments:
+color green start="/\*" end="\*/"
+color green "//.*"
+
+## Trailing whitespace
+color ,green "[[:space:]]+$"
