@@ -21,7 +21,7 @@ color yellow start="\´" end="\´"
 color white start="\$\{" end="\}"
 
 ## JSX:
-color cyan "^<*>$"
+color cyan start="(<|<\/)" end="(>|\/>)$"
 
 ## Keywords
 color green "\<(break|case|catch|continue|default|delete|do|else|finally)\>"
