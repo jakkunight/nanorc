@@ -18,38 +18,39 @@ comment "//"
 
 ## Template Strings:
 color yellow start="\´" end="\´"
-color white start="\$\{" end="\}"
+color normal start="\$\{" end="\}"
 
 ## JSX:
-color cyan start="(<|<\/)" end="(>|\/>)$"
+color cyan start="((^|[[:blank:]])<|(^|[[:blank:]])<\/)" end="(>$|\/>$)"
+color normal start="\=\{" end="\}"
 
 ## Keywords
-color green "\<(break|case|catch|continue|default|delete|do|else|finally)\>"
-color green "\<(for|function|if|in|instanceof|new|null|return|switch)\>"
-color green "\<(switch|this|throw|try|typeof|undefined|var|void|while|with)\>"
-color green "\<(import|as|from|export)\>"
-color green "\<(const|let|class|extends|of|get|set|await|async|yield)\>"
-color green "\<(console|document|fetch|module|require|window)\>"
+color blue "\<(break|case|catch|continue|default|delete|do|else|finally)\>"
+color blue "\<(for|function|if|in|instanceof|new|null|return|switch)\>"
+color blue "\<(switch|this|throw|try|typeof|undefined|var|void|while|with)\>"
+color blue "\<(import|as|from|export)\>"
+color blue "\<(const|let|class|extends|of|get|set|await|async|yield)\>"
+color blue "\<(console|document|fetch|module|require|window)\>"
 
 ## Type specifiers
 color green "\<(Array|Boolean|Date|Document|Enumerator|Error|Function|Math)\>"
 color green "\<(WeakMap|Map|WeakSet|Window|Set|Symbol|Promise)\>"
-color blue "\<(Number|Object|RegExp|String)\>"
+color green "\<(Number|Object|RegExp|String)\>"
 color blue "\<(true|false)\>"
 
 ## Operators:
 color red "\+|\-|\/|\*|\=|\&|\$|\||\.|\,|\;|\:|\?|\(|\)|\[|\]|\{|\}|\!|\^|<|>"
 
 ## Decimal, cotal and hexadecimal numbers
-color yellow "\<[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?\>"
+color magenta "\<[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?\>"
 
 ## Floating point number with at least one digit before decimal point
-color yellow "\<[-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
-color yellow "\<[-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
+color magenta "\<[-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
+color magenta "\<[-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
 
 ## String
 color yellow start="\"" end="\""
-color yellow start="\'" end="\'"
+color yellow start="'" end="'"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"
