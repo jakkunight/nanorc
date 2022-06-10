@@ -21,7 +21,7 @@ color yellow start="\´" end="\´"
 color normal start="\$\{" end="\}"
 
 ## JSX:
-color cyan start="((^|[[:blank:]])<|(^|[[:blank:]])<\/)" end="(>$|\/>$)"
+color cyan start="((^|^[[:blank:]]+)<|(^|^[[:blank:]]+)<\/)" end="(>$|\/>$)"
 color normal start="\=\{" end="\}"
 
 ## Keywords
