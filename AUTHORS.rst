@@ -134,3 +134,4 @@ Authors are sorted by number of commits.
 * Rashil Gandhi
 * Serhiy Zahoriya
 * Bart Hanssens
+* Jakku Night
