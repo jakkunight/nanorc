@@ -32,8 +32,9 @@ color blue "\<(import|as|from|export)\>"
 color blue "\<(const|let|class|extends|of|get|set|await|async|yield)\>"
 color blue "\<(console|document|fetch|module|require|window)\>"
 
-## Types
-color blue "\<(NaN)\>"
+## TypeScript
+color blue "\<(NaN|implements|protected|public|super|type|namespace|int|abstract)\>"
+color blue "\<(enum|is|infer|package|private|declare|boolean|byte)\>"
 
 ## Type specifiers
 color green "\<(Array|Boolean|Date|Document|Enumerator|Error|Function|Math)\>"
